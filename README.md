@@ -1,3 +1,4 @@
 # git-demo
-this is my first git repository
-author - prince
+This is my first git repository.
+<br>
+Author - Prince
