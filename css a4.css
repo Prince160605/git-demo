@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    background:white;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(to right,red,yellow);
+    padding:12px;
+    text-align:center;
+}
+
+header h1{
+    text-decoration:underline;
+}
+
+/* Navigation */
+
+.menu{
+    width:55%;
+    margin:20px auto;
+    background:turquoise;
+    border:2px solid red;
+    border-radius:20px;
+    padding:20px;
+}
+
+.menu ul{
+    width:200px;
+    margin:auto;
+}
+
+.menu li{
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* Offer Section */
+
+.offer-section{
+    margin:20px;
+    padding:20px;
+    background:#98f5d2;
+    border:2px solid black;
+    border-radius:20px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    gap:20px;
+}
+
+.offer-card{
+    width:400px;
+    background:#00e5ff;
+    border:2px solid green;
+    border-radius:20px;
+    padding:20px;
+
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.center-card{
+    width:420px;
+}
+
+/* Heading */
+
+.heading{
+    margin:25px 0;
+    text-align:center;
+    background:linear-gradient(to right,red,yellow);
+    padding:10px;
+    text-decoration:underline;
+    font-size:40px;
+}
+
+/* Topper Section */
+
+.topper-section{
+
+    background:radial-gradient(circle,blue 5%,cyan 35%,green 100%);
+    padding:50px;
+
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+
+}
+
+.student{
+
+    width:220px;
+
+    background:yellow;
+
+    border:2px solid red;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.student h3{
+
+    margin:20px 0;
+
+    color:brown;
+
+    text-decoration:underline;
+
+}
+
+/* Career */
+
+.career{
+
+    width:90%;
+
+    margin:30px auto;
+
+    border:2px solid black;
+
+}
+
+.career-heading{
+
+    background:red;
+
+    color:white;
+
+    text-align:center;
+
+    padding:10px;
+
+    font-size:40px;
+
+}
+
+.career-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr 180px;
+
+}
+
+.box{
+
+    min-height:130px;
+
+    padding:15px;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.green{
+
+    background:lightgreen;
+
+}
+
+.sky{
+
+    background:lightblue;
+
+}
+
+.blue{
+
+    background:blue;
+
+}
+
+.black{
+
+    background:black;
+
+}
+
+.black ol{
+
+    margin-left:25px;
+
+}
+
+.black li{
+
+    margin:8px 0;
+
+}
+
+.description{
+
+    background:orange;
+
+    color:white;
+
+    font-size:22px;
+
+    padding:20px;
+
+    font-weight:bold;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:cyan;
+
+    text-align:center;
+
+    padding:10px;
+
+}
+
+footer h2{
+
+    font-size:35px;
+
+}
+
+/* Hover Effects */
+
+.offer-card:hover{
+
+    transform:scale(1.05);
+
+    transition:.4s;
+
+}
+
+.student:hover{
+
+    transform:translateY(-10px);
+
+    transition:.4s;
+
+    box-shadow:0px 0px 20px black;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .offer-section{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .offer-card{
+
+        width:90%;
+
+    }
+
+    .topper-section{
+
+        flex-direction:column;
+
+    }
+
+    .career-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .menu{
+
+        width:90%;
+
+    }
+
+}
