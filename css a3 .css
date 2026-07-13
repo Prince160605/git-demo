@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:gray;
+    font-family:Georgia, serif;
+}
+
+/* Heading */
+
+.heading{
+    width:450px;
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+    background:white;
+    color:purple;
+    border:5px solid blue;
+    border-radius:20px;
+    box-shadow:8px 8px 12px purple;
+    font-style:italic;
+    text-shadow:2px 2px 5px violet;
+}
+
+/* Main Container */
+
+.container{
+    margin-top:20px;
+    border:5px solid blue;
+    min-height:600px;
+    position:relative;
+}
+
+/* Common Box */
+
+.box{
+    width:260px;
+    height:300px;
+    background:white;
+    border:5px solid red;
+    border-radius:15px;
+    box-shadow:8px 8px 12px purple;
+    padding:15px;
+    position:absolute;
+}
+
+/* Address */
+
+.address{
+    top:20px;
+    left:20px;
+}
+
+.address h2{
+    color:purple;
+    font-style:italic;
+    margin-bottom:12px;
+}
+
+/* Image Box */
+
+.image-box{
+    top:20px;
+    right:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-box img{
+    width:180px;
+}
+
+/* Service */
+
+.service{
+    bottom:20px;
+    left:20px;
+}
+
+.service h2{
+    color:purple;
+    margin-bottom:10px;
+    text-shadow:2px 2px 3px black;
+}
+
+/* Rating */
+
+.rating{
+    bottom:20px;
+    right:20px;
+    text-align:center;
+}
+
+.rating h2{
+    color:red;
+    margin-bottom:20px;
+}
+
+.rating label{
+    color:purple;
+    font-size:25px;
+}
+
+.rating input{
+    width:150px;
+    padding:6px;
+    border-radius:20px;
+    border:2px solid gray;
+    text-align:center;
+    margin-top:10px;
+}
+
+.rating button{
+    margin-top:15px;
+    padding:10px 20px;
+    border-radius:20px;
+    background:white;
+    cursor:pointer;
+}
+
+/* Store */
+
+.store{
+    width:980px;
+    margin:40px auto;
+    background:yellow;
+    border:8px solid teal;
+}
+
+.store h1{
+    background:yellowgreen;
+    color:red;
+    text-align:center;
+    padding:15px;
+    font-size:45px;
+}
+
+/* Fruits and Vegetables */
+
+.items{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+}
+
+.fruits,
+.vegetables{
+    width:45%;
+    text-align:center;
+}
+
+.fruits h2,
+.vegetables h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.fruits hr,
+.vegetables hr{
+    border:2px solid purple;
+    margin-bottom:20px;
+}
+
+.fruits p,
+.vegetables p{
+    margin:20px 0;
+    font-size:28px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* Other Items */
+
+.others{
+    margin:20px;
+    background:khaki;
+    padding:30px;
+    text-align:center;
+}
+
+.others h2{
+    color:red;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.others p{
+    font-size:28px;
+    font-style:italic;
+    font-weight:bold;
+    line-height:55px;
+}
+
+/* Hover */
+
+.box:hover{
+    transform:scale(1.05);
+    transition:.4s;
+}
+
+button:hover{
+    background:red;
+    color:white;
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    .store{
+        width:95%;
+    }
+
+    .items{
+        flex-direction:column;
+    }
+
+    .fruits,
+    .vegetables{
+        width:100%;
+        margin-bottom:30px;
+    }
+
+    .container{
+        position:static;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px;
+    }
+
+    .box{
+        position:static;
+    }
+
+    .heading{
+        width:90%;
+    }
+
+}
