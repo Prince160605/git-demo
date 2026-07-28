@@ -1,4 +1,5 @@
-//write a program to check anagram in string 
+///*//write a program to check the string is in anagram
+
 function isAnagram(str1, str2) {
     str1 = str1.toLowerCase().replace(/\s/g, "");
     str2 = str2.toLowerCase().replace(/\s/g, "");
@@ -20,5 +21,6 @@ let s2 = "silent";
 if (isAnagram(s1, s2)) {
     console.log("Anagram");
 } else {
+  
     console.log("Not Anagram");
-}
+}\
