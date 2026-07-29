@@ -47,13 +47,32 @@
 
 // }
 // greeting("hello",callb)
+// function  newfun(){
+//     return function nayafun(){
+//         console.log("i am new function")
+//     }
+// }
+//There are 2 Higher-Order Functions in your code.
+//1. greeting() ✅ Higher-Order Function
+// Why?
+// Because it accepts another function (callb) as an argument.
+// 2. newfun() ✅ Higher-Order Function
+// Why?
+// Because it returns another function.
+
+function newfun(number){
+    return function nayafun(factor){
+        return number *factor
+    }
+}
+console.log(newfun(3)(5))
 
 // 7th topic pure and impure function
-var c=5;
-function pure(a,b){
-    return a+b;
+// var c=5;
+// function pure(a,b){
+//     return a+b;
 
-}
-function impure(...a,b){
-    return a+b*c
-}
+// }
+// function impure(...a,b){
+//     return a+b*c
+// }
