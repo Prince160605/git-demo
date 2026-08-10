@@ -20,15 +20,24 @@
 // obj3["age"]=44
 // delete obj3.name
 // console.log(obj3) 
- const obj ={
-    name :"mahesh",
-    age : 27,
-    married :false,
-    newfun: function(){
-        return()=>{
-        //console.log(`this is calling a value ${this}`)
-        console.log(`this is nested arrow fuction ${this.married}`)
-        }
-    }
- }
-console.log(obj.newfun())
+//  const obj ={
+//     name :"mahesh",
+//     age : 27,
+//     married :false,
+//     newfun: function(){
+//         return()=>{
+//         //console.log(`this is calling a value ${this}`)
+//         console.log(`this is nested arrow fuction ${this.married}`)
+//         }
+//     }
+//  }
+// console.log(obj.newfun())con
+
+const car ={
+    name :"niraj",
+    age : 34,
+    duniya : "gola hai",
+}
+for (let obj in car){
+    console.log(obj,car[obj]);
+}
