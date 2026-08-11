@@ -8,3 +8,9 @@ btn.addEventListener("submit",(event)=>{
     event.preventDefault()
     console.log("form submitting")
 })
+
+//event.preventDefault()
+//stop propogation
+//event bubbling
+//event capturing
+// event delegation
